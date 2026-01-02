@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <link rel="shorcut icon" type="text/css" href="logo.avif">
+  <style type="text/css">
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    z-index: 1000;
+}
+
+/* Logo */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-area img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #c9a14a;
+    object-fit: cover;
+}
+
+.logo-area span {
+    font-size: 22px;
+    font-weight: 700;
+    color: #c9a14a;
+}
+
+/* Menu Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Hover underline */
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #c9a14a;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.nav-links li a:hover {
+    color: #c9a14a;
+}
+
+/* Golden Button */
+.btn-gold {
+    background: linear-gradient(135deg, #c9a14a, #f1d17a);
+    padding: 8px 18px;
+    border-radius: 25px;
+    color: #fff !important;
+    box-shadow: 0 4px 12px rgba(201,161,74,0.4);
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #c9a14a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 25px 0;
+        display: none;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #ffffff;
+}
+
+/* Services Section */
+.services {
+  padding: 60px 5%;
+  background: linear-gradient(to bottom, #ffffff, #fff8e8);
+}
+
+/* Header */
+.services-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services-header h2 {
+  font-size: 36px;
+  color: #000;
+}
+
+.services-header h2 span {
+  color: #c9a14a;
+}
+
+.services-header p {
+  color: #555;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+/* Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* Card */
+.service-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.4s;
+  border: 2px solid transparent;
+}
+
+.service-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  color: #c9a14a;
+  font-size: 18px;
+}
+
+/* Hover Effect */
+.service-card:hover {
+  transform: translateY(-10px);
+  border-color: #c9a14a;
+  box-shadow: 0 15px 40px rgba(201,161,74,0.35);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-header h2 {
+    font-size: 28px;
+  }
+}
+
+
+/* Footer Section */
+.footer {
+  background: #ffffff;
+  color: #333;
+  padding: 60px 5px 20px 5px;
+  border-top: 2px solid #c9a14a;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer h1, .footer h2 {
+  color: #c9a14a;
+  margin-bottom: 15px;
+}
+
+.footer h1 span {
+  color: #000;
+}
+
+.footer-about p,
+.footer-contact p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #c9a14a;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-social .social-icons a {
+  text-decoration: none;
+  color: #555;
+  transition: 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+  color: #c9a14a;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #c9a14a;
+  padding-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social .social-icons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo-area">
+        <img src="logo.avif" alt="Hina Beauty Parlour Logo">
+        <span>Saniya Beauty Parlour</span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="book.html" class="btn-gold">Book Now</a></li>
+    </ul>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</nav>
+
+<section class="services">
+  <div class="services-header">
+    <h2>Our <span>Services</span></h2>
+    <p>Premium beauty care to enhance your natural elegance</p>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <img src="face.jpg" alt="Facial">
+      <h3>Facial</h3>
+    </div>
+    <div class="service-card">
+      <img src="brid.jpg" alt="Bridal Makeup">
+      <h3>Bridal Makeup</h3>
+    </div>
+    <div class="service-card">
+      <img src="hair.jpg" alt="Hair Styling">
+      <h3>Hair Styling</h3>
+    </div>
+    <div class="service-card">
+      <img src="waxing.jpg" alt="Waxing">
+      <h3>Waxing</h3>
+    </div>
+    <div class="service-card">
+      <img src="mehandi.jpg" alt="Mehndi">
+      <h3>Mehndi</h3>
+    </div>
+    <div class="service-card">
+      <img src="spa.jpg" alt="Spa">
+      <h3>Spa</h3>
+    </div>
+    <div class="service-card">
+      <img src="mani1.webp" alt="Manicure">
+      <h3>Manicure</h3>
+    </div>
+    <div class="service-card">
+      <img src="pedi.jpg" alt="Pedicure">
+      <h3>Pedicure</h3>
+    </div>
+    <div class="service-card">
+      <img src="thred.jpg" alt="Threading">
+      <h3>Threading</h3>
+    </div>
+    <div class="service-card">
+      <img src="color.jpg" alt="Hair Color">
+      <h3>Hair Color</h3>
+    </div>
+    <div class="service-card">
+      <img src="mas.webp" alt="Facial Massage">
+      <h3>Facial Massage</h3>
+    </div>
+    <div class="service-card">
+      <img src="treat.jpg" alt="Hair Treatment">
+      <h3>Hair Treatment</h3>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h1>Saniya <span>Beauty Parlour</span></h1>
+      <p>Enhancing your beauty and confidence with premium services. Follow us for updates and exclusive offers.</p>
+    </div>
+
+    <div class="footer-links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="book.html">Book Now</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h2>Contact Us</h2>
+      <p>📞 +91 8318253716</p>
+      <p>📧 info@hinabeauty.com</p>
+      <p>📍 Galla Mandi, Kharagpur 208021, Kanpur Nagar</p>
+    </div>
+
+    <div class="footer-social">
+      <h2>Follow Us</h2>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/beautybarsalon0110/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/shreya_j_makeupandhair/?hl=en" target="_blank">Instagram</a>
+        <a href="https://localfame.com/twitter-for-beauty-and-hair-salons/" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Saniya Beauty Parlour. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+  console.log("Our Services Section Loaded for Hina Beauty Parlour");
+
+</script>
+</body>
+</html>

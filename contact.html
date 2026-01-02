@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="shorcut icon" type="text/css" href="logo.avif">
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    z-index: 1000;
+}
+
+/* Logo */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-area img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #c9a14a;
+    object-fit: cover;
+}
+
+.logo-area span {
+    font-size: 22px;
+    font-weight: 700;
+    color: #c9a14a;
+}
+
+/* Menu Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Hover underline */
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #c9a14a;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.nav-links li a:hover {
+    color: #c9a14a;
+}
+
+/* Golden Button */
+.btn-gold {
+    background: linear-gradient(135deg, #c9a14a, #f1d17a);
+    padding: 8px 18px;
+    border-radius: 25px;
+    color: #fff !important;
+    box-shadow: 0 4px 12px rgba(201,161,74,0.4);
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #c9a14a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 25px 0;
+        display: none;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+/* Section */
+.contact-section{
+    height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    background: linear-gradient(to bottom, #ffffff, #fff8e8);
+}
+
+/* Card */
+.contact-card{
+    background:#ffffff;
+    max-width:560px;
+    width:100%;
+    padding:45px 35px;
+    border-radius:18px;
+    box-shadow:0 18px 45px rgba(0,0,0,0.08);
+    border-top:6px solid #c9a14a;
+    text-align:center;
+}
+
+/* Title */
+.contact-card h1{
+    font-size:34px;
+    color:#2b2b2b;
+    margin-bottom:8px;
+}
+
+.contact-card h1 span{
+    color:#c9a14a;
+}
+
+.contact-card p{
+    font-size:15px;
+    color:#777;
+    margin-bottom:30px;
+}
+
+/* Inputs */
+.contact-card input,
+.contact-card textarea{
+    width:100%;
+    padding:15px 16px;
+    margin-bottom:18px;
+    border-radius:12px;
+    border:1px solid #ddd;
+    font-size:15px;
+    outline:none;
+    transition:0.3s;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus{
+    border-color:#c9a14a;
+    box-shadow:0 0 0 2px rgba(201,161,74,0.18);
+}
+
+textarea{
+    resize:none;
+    height:120px;
+}
+
+/* Button */
+.whatsapp-btn{
+    width:100%;
+    padding:15px;
+    background:linear-gradient(135deg,#d4af37,#c9a14a);
+    border:none;
+    border-radius:14px;
+    font-size:16px;
+    font-weight:600;
+    color:#fff;
+    cursor:pointer;
+    transition:0.35s;
+}
+
+.whatsapp-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(201,161,74,0.4);
+}
+
+
+/* Footer Section */
+.footer {
+  background: #ffffff;
+  color: #333;
+  padding: 60px 5px 20px 5px;
+  border-top: 2px solid #c9a14a;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer h1, .footer h2 {
+  color: #c9a14a;
+  margin-bottom: 15px;
+}
+
+.footer h1 span {
+  color: #000;
+}
+
+.footer-about p,
+.footer-contact p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #c9a14a;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-social .social-icons a {
+  text-decoration: none;
+  color: #555;
+  transition: 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+  color: #c9a14a;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #c9a14a;
+  padding-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social .social-icons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo-area">
+        <img src="logo.avif" alt="Hina Beauty Parlour Logo">
+        <span>Saniya Beauty Parlour</span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="book.html" class="btn-gold">Book Now</a></li>
+    </ul>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</nav>
+
+<section class="contact-section">
+    <div class="contact-card">
+        <h1>Contact <span>Us</span></h1>
+        <p>Have questions or want to book an appointment? Reach out to Saniya Beauty Parlour. We’d love to hear from you! We believe in delivering an exceptional experience to make you look and feel your best.</p>
+
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="tel" id="phone" placeholder="Your Phone Number">
+        <textarea id="message" placeholder="Your Message"></textarea>
+
+        <button class="whatsapp-btn" onclick="sendWhatsApp()">
+            Send WhatsApp Message
+        </button>
+
+        <div class="footer-text">
+            We respond quickly on WhatsApp 💛
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h1>Saniya <span>Beauty Parlour</span></h1>
+      <p>Enhancing your beauty and confidence with premium services. Follow us for updates and exclusive offers.</p>
+    </div>
+
+    <div class="footer-links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="book.html">Book Now</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h2>Contact Us</h2>
+      <p>📞 +91 8318253716</p>
+      <p>📧 info@hinabeauty.com</p>
+      <p>📍 Galla Mandi, Kharagpur 208021, Kanpur Nagar</p>
+    </div>
+
+    <div class="footer-social">
+      <h2>Follow Us</h2>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/beautybarsalon0110/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/shreya_j_makeupandhair/?hl=en" target="_blank">Instagram</a>
+        <a href="https://localfame.com/twitter-for-beauty-and-hair-salons/" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Saniya Beauty Parlour. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+  function sendWhatsApp(){
+    let name = document.getElementById("name").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    if(name === "" || phone === "" || message === ""){
+        alert("Please fill all details");
+        return;
+    }
+
+    let text =
+        "Hello Hina Beauty Parlour %0A%0A" +
+        "Name: " + name + "%0A" +
+        "Phone: " + phone + "%0A%0A" +
+        "Message: " + message;
+
+    let url = "https://wa.me/918318253716?text=" + text;
+
+    window.open(url, "_blank");
+}
+
+</script>
+</body>
+</html>
